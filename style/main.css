@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 'Manrope', sans-serif;
+}
+
+:root {
+  --bg-1: hsl(218, 23%, 16%);
+  --bg-2: hsl(217, 19%, 24%);
+  --h2: hsl(150, 100%, 66%);
+  --text: hsl(217, 19%, 38%);
+}
+
+body {
+  background-color: var(--bg-1);
+}
+
+.main {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 -15px;
+}
+
+.advice-wrapper {
+  width: 550px;
+  height: 400px;
+  background-color: var(--bg-2);
+  border-radius: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h2 {
+  color: var(--h2);
+  font-size: 1rem;
+}
