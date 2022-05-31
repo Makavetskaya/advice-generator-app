@@ -77,6 +77,22 @@ body {
 img {
   margin-bottom: 45px;
 }
+.icons {
+  width: 400px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.icons li {
+  margin-right: 15px;
+  cursor: pointer;
+  font-size: 25px;
+  color: var(--h2);
+}
+
+.icons li:hover {
+  color: var(--text);
+}
 
 button {
   border: none;
@@ -87,6 +103,7 @@ button {
   position: absolute;
   bottom: -30px;
   transition: all 0.5;
+  cursor: pointer;
 }
 
 button::after {
@@ -126,6 +143,22 @@ button:hover {
     max-width: 300px;
     margin-bottom: 35px;
   }
+  .icons {
+    width: 200px;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .icons li {
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 12px;
+    color: var(--h2);
+  }
+
+  .icons li:hover {
+    color: var(--text);
+  }
 
   button {
     width: 48px;
@@ -160,6 +193,7 @@ button:hover {
   .advice-area .advice-text {
     font-size: 0.9rem;
   }
+
   img {
     max-width: 220px;
     margin-bottom: 25px;
