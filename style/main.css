@@ -9,8 +9,8 @@
 :root {
   --bg-1: hsl(218, 23%, 16%);
   --bg-2: hsl(217, 19%, 24%);
-  --h2: hsl(150, 100%, 66%);
-  --text: hsl(217, 19%, 38%);
+  --h2: rgb(82, 255, 168);
+  --text: hsl(222, 52%, 90%);
 }
 
 body {
@@ -18,23 +18,166 @@ body {
 }
 
 .main {
-  max-width: 1170px;
-  margin: 0 auto;
-  padding: 0 -15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 210px -15px 0;
 }
 
 .advice-wrapper {
-  width: 550px;
-  height: 400px;
+  position: relative;
+  max-width: 550px;
   background-color: var(--bg-2);
   border-radius: 1.5rem;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+  padding: 30px 45px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-h2 {
+.advice-wrapper h2 {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-align: center;
   color: var(--h2);
-  font-size: 1rem;
+  font-size: 0.9rem;
+  margin-bottom: 50px;
+}
+
+.advice-wrapper .content {
+  display: flex;
+  justify-content: center;
+}
+.advice-area {
+  display: flex;
+  margin-bottom: 45px;
+}
+.advice-area i {
+  font-size: 1.2rem;
+  color: var(--text);
+}
+.advice-area i:first-child {
+  margin: 3px 3px 0 0;
+}
+
+.advice-area i:last-child {
+  display: flex;
+  align-items: flex-end;
+  margin: 0 0 3px 3px;
+}
+
+.advice-area .advice-text {
+  color: var(--text);
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+img {
+  margin-bottom: 45px;
+}
+
+button {
+  border: none;
+  background-color: var(--h2);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -30px;
+  transition: all 0.5;
+}
+
+button::after {
+  content: '';
+  display: block;
+  height: 30px;
+  width: 30px;
+  background-image: url(../images/icon-dice.svg);
+  background-size: 30px 30px;
+  position: absolute;
+  top: 15px;
+  left: 14px;
+}
+button:hover {
+  box-shadow: 1px 1px 30px rgb(82, 255, 168, 0.8);
+}
+
+@media (max-width: 768px) {
+  .advice-wrapper {
+    max-width: 400px;
+    border-radius: 1.2rem;
+  }
+  .advice-wrapper h2 {
+    font-size: 0.6rem;
+    margin-bottom: 30px;
+  }
+  .advice-area {
+    margin-bottom: 30px;
+  }
+  .advice-area i {
+    font-size: 0.7rem;
+  }
+  .advice-area .advice-text {
+    font-size: 1rem;
+  }
+  img {
+    max-width: 300px;
+    margin-bottom: 35px;
+  }
+
+  button {
+    width: 48px;
+    height: 48px;
+    bottom: -24px;
+  }
+  button::after {
+    height: 21px;
+    width: 21px;
+    background-size: 21px 21px;
+    top: 13.5px;
+    left: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .advice-wrapper {
+    max-width: 280px;
+    border-radius: 1rem;
+    padding: 20px 35px;
+  }
+  .advice-wrapper h2 {
+    font-size: 0.5rem;
+    margin-bottom: 25px;
+  }
+  .advice-area {
+    margin-bottom: 25px;
+  }
+  .advice-area i {
+    font-size: 0.6rem;
+  }
+  .advice-area .advice-text {
+    font-size: 0.9rem;
+  }
+  img {
+    max-width: 220px;
+    margin-bottom: 25px;
+  }
+
+  button {
+    width: 35px;
+    height: 35px;
+    bottom: -18px;
+  }
+  button::after {
+    height: 15px;
+    width: 15px;
+    background-size: 15px 15px;
+    top: 11px;
+    left: 10px;
+  }
+}
+
+@media (max-width: 320px) {
 }

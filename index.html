@@ -8,6 +8,7 @@
     <!--STYLE-->
     <link rel="stylesheet" href="style/main.css" />
     <!--FONTS-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,13 +19,23 @@
   <body>
     <section class="main">
       <div class="advice-wrapper">
-        <h2>Advice<span class="'number-advice"></span></h2>
-        <div class="advice-text">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis
-          illo unde eaque.
+        <h2>Advice <span># <span class="number-advice">123</span></h2>
+        <div class="content">
+          <div class="advice-area">
+            <i class='bx bxs-quote-alt-left'></i>
+          <p class="advice-text">
+            You spend half your life asleep or in bed. It's worth spending money
+            on a good mattress, decent pillows and a comfy duvet.
+          </p>
+          <i class='bx bxs-quote-alt-right' ></i>
+          </div> 
         </div>
-        <img src="images/pattern-divider-desktop.svg" alt="" />
-        <button class="new-advace">+</button>
+      
+         <img src="images/pattern-divider-desktop.svg" alt="" />
+          <!-- <div class="sound">
+            <i class='bx bx-volume-full'></i>
+          </div> -->
+        <button class="random-advice"></button>
       </div>
     </section>
     <script src="js/main.js"></script>
