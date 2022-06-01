@@ -10,15 +10,15 @@ const randomAdvice = () => {
     // fetching random data from the API  and parsing it intro JS object
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
       dataWrapper.innerText = data.slip.advice;
       numberAdvice.innerText = data.slip.id;
     });
 };
 
 soundBtn.addEventListener('click', () => {
+  // the SpeechSynthesisUtterance is a web speech api that respesenr speech advice
   let utterance = new SpeechSynthesisUtterance(`${dataWrapper.innerText}`);
-  speechSynthesis.speak(utterance);
+  speechSynthesis.speak(utterance); // speak method of speechSynthesis speaks utterance
 });
 
 copyBtn.addEventListener('click', () => {

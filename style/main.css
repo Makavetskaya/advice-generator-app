@@ -88,6 +88,7 @@ img {
   cursor: pointer;
   font-size: 25px;
   color: var(--h2);
+  transition: 0.25s all ease-in;
 }
 
 .icons li:hover {
@@ -104,6 +105,7 @@ button {
   bottom: -30px;
   transition: all 0.5;
   cursor: pointer;
+  transition: 0.25s all ease-in;
 }
 
 button::after {
