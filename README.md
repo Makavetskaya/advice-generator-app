@@ -5,7 +5,7 @@ https://makavetskaya.github.io/advice-generator-app/
 
 Technologies used:
 - The application is written using JS.
-- The API (Advice Slip API) is used.
+- The API (Advice Slip API) is used
 
 
 
