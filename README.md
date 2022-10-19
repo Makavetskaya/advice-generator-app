@@ -1,7 +1,7 @@
 
 
-advice-generator-app
-https://makavetskaya.github.io/advice-generator-app/
+#advice-generator-app
+#https://makavetskaya.github.io/advice-generator-app/
 
 Technologies used:
 - The application is written using JS.
