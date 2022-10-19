@@ -2,7 +2,7 @@
 
 Technologies used:
 - The application is written using JS.
-- The API ( OpenWeatherMap) is used.
+- The API (Advice Slip API) is used.
 
 https://makavetskaya.github.io/advice-generator-app/
 
