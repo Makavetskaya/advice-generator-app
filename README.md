@@ -1,8 +1,8 @@
 # advice-generator-app
 
 Technologies used:
-The application is written using JS.
-The API ( OpenWeatherMap) is used.
+- The application is written using JS.
+- The API ( OpenWeatherMap) is used.
 
 https://makavetskaya.github.io/advice-generator-app/
 
