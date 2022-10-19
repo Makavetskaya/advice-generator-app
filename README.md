@@ -1,3 +1,5 @@
+https://makavetskaya.github.io/advice-generator-app/
+
 # advice-generator-app
 
 Technologies used:
